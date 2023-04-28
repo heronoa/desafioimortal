@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, #95ff00, #17fbb7);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.preco button {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to left, #ffffffb1, #ffffff2d);
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    box-shadow: 0 20px 30px 0 #ffffff09;
+    border-bottom: 5px solid #ffffff36;
+    transition: all .3s;
+}
+
+.preco button:hover {
+    border-bottom: 5px solid #ffffff;
+    box-shadow: 0 20px 30px 0 #ffffff74;
+}
+
+.preco .items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.preco .itens p {
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 15px;
+    color: #fff;
+    margin: 5px 0;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+.preco .valor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preco .valor h3 {
+    font-family: Poppins;
+    font-size: 65px;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.preco .valor p {
+    font-family: Poppins;
+    font-size: 25px;
+    color: #fff;
+}
+
+.preco .nome {
+    position: absolute;
+    top: -30px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: linear-gradient(to left, #95ff00, #17fbb7);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.preco.destacado .nome {
+    border: 2px solid #000000;
+}
+
+.preco .nome h3 {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 5px;
+}
+
+.preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.preco.destacado {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid #000000;
+    margin: 0 10px
+}
+
+.preco .itens p span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    animation: sparkSpan 1s linear infinite;
+}
+
+@keyframes sparkSpan {
+    0% {
+        background-color: #ffffff;
+
+    }
+
+    50% {
+        background-color: #ffffff5c;
+
+    }
+
+    100% {
+        background-color: #ffffff;
+
+    }
+}
